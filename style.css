@@ -1,0 +1,265 @@
+@font-face { font-family: Britannic1; src: url('fonts/Britannic-Bold-Regular.ttf'); } 
+@font-face { font-family: Britannic2; font-weight: bold; src: url('fonts/BRITANIC.ttf');}
+
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+.i_background {
+    /* background:black */
+    margin-top: 57px;
+}
+
+h3 {
+    margin-top:20px !important;
+    margin-bottom:20px !important
+}
+div.container {
+    padding: 0 !important;
+}
+video{
+    outline: 0px;
+    border:0
+}
+
+a {
+    transition: all 0.3s ease;
+    color:rgb(164, 164, 164) !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color:rgb(92, 92, 92) !important;
+    text-decoration: none !important;
+    text-decoration: none;
+}
+
+.i_header {
+    font-family: 'Britannic1', sans-serif;
+    font-size: 55px;
+    text-shadow: 1px 1px 5px #ffffff88;
+    color:pink;
+    position:fixed;
+    height:70px;
+    width:100%;
+    top:-13px;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-bottom:5px;
+    text-align:center;
+    z-index:1000;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .14), 0 0px 0px -1px rgba(0, 0, 0, .14), 0 1px 8px 4px rgba(0, 0, 0, 0.098)
+
+}
+
+.i_headerpic {
+    background:url('./img/img/111.JPG');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top:330px;
+    padding-left:10px;
+    color:white;
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .i_headerpic {
+        background:url('./img/img/113.JPG');
+        background-size: 100% auto;
+        height: 450px;
+    }
+}
+
+@media (max-width: 700px) {
+    .i_headerpic {
+        padding-top:430px;
+        height: 450px;
+    }
+}
+
+.i_header:hover {
+    color:rgb(255, 204, 0);
+}
+
+.i_header:active {
+    color:white;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+.i_container {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    line-height: 30px;
+    color:black;
+    width:70%;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    .i_container {
+        width:80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .i_container {
+        width:100%;
+    }
+    .i_containertext {
+        margin-left:3%;
+        margin-right:3%;
+    }
+}
+
+.i_img {
+    width: 100%;
+}
+
+.i_text {
+    line-height:20px;
+    font-size:14px;
+    margin-top:10px
+}
+
+.i_carouselimg {
+    width:100%;
+    border-radius:50%
+}
+
+.i_carouselimg1 {
+    width:100%;
+    border-radius:50%
+}
+
+@media (max-width: 700px) {
+    .i_carouselimg {
+        width:80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .i_carouselimg {
+        width:70%;
+    }
+}
+
+.i_cast_desc {
+    margin-top:30px;
+    line-height:35px;
+    font-size:35px
+}
+
+@media (max-width: 700px) {
+    .i_cast_desc {
+        margin-top:0px;
+        line-height:27px;
+        font-size:25px
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+/* Bootstrap Custom Styles */
+
+.card {
+    color:black !important
+}
+
+.i_prev {
+    left:-80px !important;
+}
+
+.i_previcon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.i_nexticon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.i_next {
+    right:-80px !important
+}
+
+@media (max-width: 700px) {
+    .i_prev {
+        left:0 !important;
+    }
+    .i_next {
+        right:0 !important
+    }
+}
+
+.card-body {
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
+
+.card {
+    border:0 !important
+}
+
+.carousel-indicators {
+    bottom:-30px !important;
+}
+
+.carousel-indicators li {
+    background-color: rgb(136, 136, 136) !important
+}
+
+.carousel-indicators .active {
+    background-color: rgb(208, 208, 208) !important
+}
+
+.carousel {
+    margin-bottom:60px !important
+}
+
+.row {
+    margin:0 !important
+}
+
+.modal-dialog {
+    max-width:70% !important
+}
+
+@media (max-width: 700px) {
+    .modal-dialog {
+        max-width:100% !important;
+        margin-left:4% !important;
+        margin-right:4% !important;
+    }
+}
+
+/* End Bootstrap Custom Styles */
+
+
+.box > .icon { text-align: center; position: relative; }
+.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 100px; height: 100px; border: 8px solid white; line-height: 88px; border-radius: 50%; vertical-align: middle; }
+.box > .icon:hover > .image { background: #333; }
+.box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+.box > .icon:hover > .image > i { color: white !important; }
+.box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; }
+.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+.box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 16px; color: #222; font-weight: 500; }
+.box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+.box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px;; }
+.box .space { height: 30px; }
